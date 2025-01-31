@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Spread Simulation</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script defer src="sketch.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        .controls {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fire Spread Simulation</h1>
+    <div class="controls">
+        <label for="treeRegrowth">Tree Regrowth Rate:</label>
+        <select id="treeRegrowth"></select>
+
+        <label for="fireSpread">Fire Spread Rate:</label>
+        <select id="fireSpread"></select>
+
+        <button id="applyButton">Apply</button>
+    </div>
+</body>
+</html>
